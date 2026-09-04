@@ -1,0 +1,27 @@
+{
+  "retrieved": "2026-09-04",
+  "sources": {
+    "hpo": {
+      "url": "https://purl.obolibrary.org/obo/hp/hpoa/phenotype.hpoa",
+      "release": "2026-09-02",
+      "rows": 286651,
+      "file": "data/bulk/hpo-phenotype-annotations.jsonl.gz",
+      "bytes": 83521121,
+      "sha256": "4e7093274308f1b3f43aa38fd9dbb0a5d7ed3c389ae66f3c24dc46d1884cefc4"
+    },
+    "disease_names.tsv": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/disease_names",
+      "file": "data/bulk/disease_names.tsv.gz",
+      "bytes": 5592822,
+      "sha256": "1770880128360e4afcc207d82a3e49d4cab2756124cbb176f7e3610a0ad863ce",
+      "lines": 67522
+    },
+    "gene_condition_source_id.tsv": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/gene_condition_source_id",
+      "file": "data/bulk/gene_condition_source_id.tsv.gz",
+      "bytes": 1253803,
+      "sha256": "4320015112e7bdfe92741db7fca437fb73fce6c9d18e2739eb06f7ddfa5e5947",
+      "lines": 13472
+    }
+  }
+}

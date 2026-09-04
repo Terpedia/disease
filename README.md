@@ -25,6 +25,7 @@ Validate the catalog with:
 ```bash
 python3 scripts/validate_catalog.py
 python3 scripts/ingest_hpo.py
+python3 scripts/ingest_bulk.py
 ```
 
 ## Data model
@@ -32,6 +33,8 @@ python3 scripts/ingest_hpo.py
 `data/disease-catalog.json` is the reader-facing source of truth. `data/disease-records.json` stores structured biology, while `data/phenotype-annotations.json` is generated from HPO. Each evidence claim must identify its evidence type and include a source URL. Confidence is deliberately categorical (`high`, `moderate`, `low`, or `uncertain`) so it can be displayed without implying unwarranted precision.
 
 See [docs/data-model.md](docs/data-model.md) for contribution guidance.
+
+The bulk snapshot includes all HPO disease annotations and ClinVar’s disease-name and gene–condition relationship summaries. Run `python3 scripts/ingest_bulk.py` to refresh it; `data/bulk/manifest.json` records release, row counts, retrieval date, and checksums.
 
 ## Scope and safeguards
 
