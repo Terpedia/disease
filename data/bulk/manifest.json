@@ -22,6 +22,23 @@
       "bytes": 1253803,
       "sha256": "4320015112e7bdfe92741db7fca437fb73fce6c9d18e2739eb06f7ddfa5e5947",
       "lines": 13472
+    },
+    "gene-ontology-human": {
+      "url": "https://current.geneontology.org/annotations/goa_human.gaf.gz",
+      "file": "data/bulk/goa-human.gaf.gz",
+      "format": "GAF.gz",
+      "bytes": 175747517,
+      "lines": 906477,
+      "sha256": "e227542a9509bf9cd5f856c809639ac713ce8ad5ca435e085e910ff8d3f3f7f1"
+    },
+    "reactome-human": {
+      "url": "https://reactome.org/ContentService/data/pathways/top/9606",
+      "version_url": "https://reactome.org/ContentService/data/database/version",
+      "reactome_release": "97",
+      "file": "data/bulk/reactome-human-top-pathways.json",
+      "pathways": 29,
+      "bytes": 12191,
+      "sha256": "90d7b55e40998f8ac2fbecac45767f2103ce63a84e0ed761e27f4622e5723e53"
     }
   }
 }

@@ -26,7 +26,9 @@ jobs:
           python-version: "3.x"
 
       - name: Ingest upstream snapshots
-        run: python3 scripts/ingest_bulk.py
+        run: |
+          python3 scripts/ingest_bulk.py
+          python3 scripts/ingest_pathway_sources.py
 
       - name: Validate catalog
         run: python3 scripts/validate_catalog.py

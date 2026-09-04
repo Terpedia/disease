@@ -34,7 +34,7 @@ python3 scripts/ingest_bulk.py
 
 See [docs/data-model.md](docs/data-model.md) for contribution guidance.
 
-The bulk snapshot includes all HPO disease annotations and ClinVar’s disease-name and gene–condition relationship summaries. Run `python3 scripts/ingest_bulk.py` to refresh it; `data/bulk/manifest.json` records release, row counts, retrieval date, and checksums.
+The bulk snapshot includes all HPO disease annotations, ClinVar’s disease-name and gene–condition relationship summaries, the human Gene Ontology annotation file, and Reactome’s human pathway overview. Run `python3 scripts/ingest_bulk.py && python3 scripts/ingest_pathway_sources.py` to refresh it; `data/bulk/manifest.json` records release, row counts, retrieval date, and checksums.
 
 GitHub Actions refreshes the snapshots every Monday at 06:17 UTC, validates the catalog, and commits only when upstream data changes. The workflow can also be started manually from the Actions tab.
 
