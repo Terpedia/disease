@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Evidence-first disease knowledge from Terpedia.">
+  <title>Terpedia Disease</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <p class="eyebrow">TERPEDIA / RESEARCH INDEX</p>
+    <h1>Disease, with the evidence left visible.</h1>
+    <p class="lede">A growing catalog of disease entities, source-linked claims, and the uncertainty around them.</p>
+  </header>
+  <main>
+    <section class="toolbar" aria-label="Catalog controls">
+      <label>Search diseases <input id="search" type="search" placeholder="Name or alias"></label>
+      <p id="catalog-meta" class="meta">Loading catalog…</p>
+    </section>
+    <section id="disease-list" class="disease-grid" aria-live="polite"></section>
+  </main>
+  <footer><p>For education and knowledge organization only. Not medical advice.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

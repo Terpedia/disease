@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "catalog_title": "Terpedia Disease Catalog",
+  "catalog_description": "A provenance-first index of diseases and evidence claims.",
+  "last_updated": "2026-09-04",
+  "diseases": [
+    {
+      "id": "example-disease",
+      "name": "Example disease",
+      "aliases": [],
+      "classification": "Example",
+      "overview": "Placeholder entity used to demonstrate the catalog structure.",
+      "status": "draft",
+      "claims": [
+        {
+          "id": "example-disease-overview",
+          "statement": "This placeholder claim should be replaced by a narrow, source-linked statement during review.",
+          "evidence_type": "editorial",
+          "confidence": "uncertain",
+          "source": {
+            "title": "Replace with an authoritative source",
+            "url": "https://www.who.int/health-topics"
+          },
+          "review_status": "needs-review"
+        }
+      ]
+    }
+  ]
+}
