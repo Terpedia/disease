@@ -39,6 +39,19 @@
       "pathways": 29,
       "bytes": 12191,
       "sha256": "90d7b55e40998f8ac2fbecac45767f2103ce63a84e0ed761e27f4622e5723e53"
+    },
+    "gwas-catalog-full": {
+      "url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations_ontology-annotated-full.zip",
+      "file": "data/bulk/gwas-catalog-associations-ontology-annotated-full.zip",
+      "format": "ZIP",
+      "bytes": 73489749,
+      "sha256": "64f9f7c47daad471f88e34c3a69cb0ca009b73fd193e0e13cba12f6212c514e1",
+      "members": [
+        {
+          "name": "gwas-catalog-download-associations-alt-full.tsv",
+          "bytes": 740716183
+        }
+      ]
     }
   }
 }
