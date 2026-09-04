@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.1.0",
+  "records": [
+    {
+      "id": "alzheimer-disease",
+      "name": "Alzheimer disease",
+      "identifiers": {"mondo": "MONDO:0004975", "omim": ["104300"]},
+      "genes": [
+        {"symbol": "APP", "role": "disease-associated gene", "evidence": "genetic"},
+        {"symbol": "PSEN1", "role": "disease-associated gene", "evidence": "genetic"},
+        {"symbol": "PSEN2", "role": "disease-associated gene", "evidence": "genetic"},
+        {"symbol": "APOE", "role": "risk modifier", "evidence": "genetic"}
+      ],
+      "markers": [
+        {"name": "amyloid-beta 42", "compartment": "cerebrospinal fluid", "role": "research biomarker", "direction": "decreased"},
+        {"name": "phosphorylated tau", "compartment": "cerebrospinal fluid", "role": "research biomarker", "direction": "increased"}
+      ],
+      "pathways": [
+        {"name": "amyloid precursor protein processing", "source": "Reactome", "status": "curated"},
+        {"name": "tau protein phosphorylation", "source": "Reactome", "status": "curated"}
+      ],
+      "regulators": [
+        {"symbol": "APOE", "relationship": "risk-modifies", "target": "amyloid-beta clearance", "status": "evidence-backed"}
+      ]
+    },
+    {
+      "id": "type-2-diabetes-mellitus",
+      "name": "Type 2 diabetes mellitus",
+      "identifiers": {"mondo": "MONDO:0005148", "omim": ["125853"]},
+      "genes": [
+        {"symbol": "TCF7L2", "role": "risk-associated gene", "evidence": "GWAS"},
+        {"symbol": "PPARG", "role": "risk-associated gene", "evidence": "genetic"},
+        {"symbol": "KCNJ11", "role": "beta-cell function gene", "evidence": "genetic"},
+        {"symbol": "ABCC8", "role": "beta-cell function gene", "evidence": "genetic"}
+      ],
+      "markers": [
+        {"name": "glycated hemoglobin (HbA1c)", "compartment": "blood", "role": "clinical measurement", "direction": "increased"},
+        {"name": "fasting plasma glucose", "compartment": "blood", "role": "clinical measurement", "direction": "increased"},
+        {"name": "C-peptide", "compartment": "blood", "role": "physiology marker", "direction": "context-dependent"}
+      ],
+      "pathways": [
+        {"name": "insulin receptor signaling", "source": "Reactome", "status": "curated"},
+        {"name": "glucose homeostasis", "source": "Gene Ontology", "status": "curated"}
+      ],
+      "regulators": [
+        {"symbol": "TCF7L2", "relationship": "transcriptional-regulator-associated", "target": "islet and incretin biology", "status": "evidence-backed"}
+      ]
+    },
+    {
+      "id": "parkinson-disease",
+      "name": "Parkinson disease",
+      "identifiers": {"mondo": "MONDO:0005180", "omim": ["168600"]},
+      "genes": [
+        {"symbol": "SNCA", "role": "disease-associated gene", "evidence": "genetic"},
+        {"symbol": "LRRK2", "role": "disease-associated gene", "evidence": "genetic"},
+        {"symbol": "PRKN", "role": "mitophagy-associated gene", "evidence": "genetic"},
+        {"symbol": "PINK1", "role": "mitophagy-associated gene", "evidence": "genetic"}
+      ],
+      "markers": [
+        {"name": "alpha-synuclein", "compartment": "cerebrospinal fluid", "role": "research biomarker", "direction": "context-dependent"},
+        {"name": "dopamine transporter signal", "compartment": "striatum", "role": "imaging biomarker", "direction": "decreased"}
+      ],
+      "pathways": [
+        {"name": "mitophagy", "source": "Reactome", "status": "curated"},
+        {"name": "vesicle-mediated transport", "source": "Gene Ontology", "status": "curated"}
+      ],
+      "regulators": [
+        {"symbol": "LRRK2", "relationship": "kinase-regulates", "target": "vesicle and lysosome biology", "status": "evidence-backed"}
+      ]
+    }
+  ]
+}

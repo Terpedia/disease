@@ -5,24 +5,39 @@
   "last_updated": "2026-09-04",
   "diseases": [
     {
-      "id": "example-disease",
-      "name": "Example disease",
-      "aliases": [],
-      "classification": "Example",
-      "overview": "Placeholder entity used to demonstrate the catalog structure.",
+      "id": "alzheimer-disease",
+      "name": "Alzheimer disease",
+      "aliases": ["Alzheimer's disease", "AD"],
+      "classification": "Neurodegenerative",
+      "overview": "A neurodegenerative disease represented through phenotype, fluid biomarkers, disease-associated genes, and protein-processing pathways.",
       "status": "draft",
       "claims": [
-        {
-          "id": "example-disease-overview",
-          "statement": "This placeholder claim should be replaced by a narrow, source-linked statement during review.",
-          "evidence_type": "editorial",
-          "confidence": "uncertain",
-          "source": {
-            "title": "Replace with an authoritative source",
-            "url": "https://www.who.int/health-topics"
-          },
-          "review_status": "needs-review"
-        }
+        {"id": "ad-fluid-biomarkers", "statement": "Amyloid-beta 42 and phosphorylated tau in cerebrospinal fluid are research biomarkers used in Alzheimer disease evaluation; interpretation depends on assay and clinical context.", "evidence_type": "clinical-guidance", "confidence": "moderate", "source": {"title": "NIA: Alzheimer's and dementia", "url": "https://www.nia.nih.gov/health/alzheimers-and-dementia"}, "review_status": "needs-review"},
+        {"id": "ad-associated-genes", "statement": "APP, PSEN1, PSEN2, and APOE are represented as disease-associated or risk-modifying genes, with distinct inheritance and evidence profiles.", "evidence_type": "genetic", "confidence": "high", "source": {"title": "NCBI MedGen", "url": "https://www.ncbi.nlm.nih.gov/medgen/"}, "review_status": "needs-review"}
+      ]
+    },
+    {
+      "id": "type-2-diabetes-mellitus",
+      "name": "Type 2 diabetes mellitus",
+      "aliases": ["type 2 diabetes", "T2D"],
+      "classification": "Metabolic",
+      "overview": "A metabolic disease presented through glucose measurements, beta-cell and insulin-signaling biology, genetic risk, and phenotype annotations.",
+      "status": "draft",
+      "claims": [
+        {"id": "t2d-glucose-measurements", "statement": "Glycated hemoglobin and plasma glucose measurements are used to assess glycemic status; a measurement is not by itself a complete disease mechanism.", "evidence_type": "clinical-guidance", "confidence": "high", "source": {"title": "NIDDK: Type 2 diabetes", "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-2-diabetes"}, "review_status": "needs-review"},
+        {"id": "t2d-genetic-risk", "statement": "TCF7L2, PPARG, KCNJ11, and ABCC8 are included as genetically supported relationships with different biological roles rather than interchangeable causal labels.", "evidence_type": "genetic", "confidence": "moderate", "source": {"title": "NHGRI-EBI GWAS Catalog", "url": "https://www.ebi.ac.uk/gwas/"}, "review_status": "needs-review"}
+      ]
+    },
+    {
+      "id": "parkinson-disease",
+      "name": "Parkinson disease",
+      "aliases": ["Parkinson's disease", "PD"],
+      "classification": "Neurodegenerative",
+      "overview": "A neurodegenerative disease presented through motor phenotypes, research biomarkers, mitochondrial quality-control pathways, and genetic evidence.",
+      "status": "draft",
+      "claims": [
+        {"id": "pd-biomarker-status", "statement": "Alpha-synuclein and dopamine-transporter signal are represented as research or imaging biomarkers whose clinical meaning depends on method and context.", "evidence_type": "research", "confidence": "moderate", "source": {"title": "NINDS: Parkinson's disease", "url": "https://www.ninds.nih.gov/health-information/disorders/parkinsons-disease"}, "review_status": "needs-review"},
+        {"id": "pd-genetic-pathways", "statement": "SNCA, LRRK2, PRKN, and PINK1 connect Parkinson disease to protein handling, kinase signaling, and mitochondrial quality-control hypotheses.", "evidence_type": "genetic-and-pathway", "confidence": "moderate", "source": {"title": "Reactome: disease pathways", "url": "https://reactome.org/userguide/diseases"}, "review_status": "needs-review"}
       ]
     }
   ]

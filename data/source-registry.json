@@ -1,0 +1,42 @@
+{
+  "sources": [
+    {
+      "id": "hpo-phenotype-annotations",
+      "name": "Human Phenotype Ontology disease annotations",
+      "url": "https://purl.obolibrary.org/obo/hp/hpoa/phenotype.hpoa",
+      "format": "HPOA",
+      "license_url": "https://human-phenotype-ontology.github.io/license.html",
+      "role": "disease-to-phenotype annotations"
+    },
+    {
+      "id": "medgen",
+      "name": "NCBI MedGen",
+      "url": "https://www.ncbi.nlm.nih.gov/medgen/",
+      "role": "disease identity and cross-references"
+    },
+    {
+      "id": "reactome",
+      "name": "Reactome",
+      "url": "https://reactome.org/",
+      "role": "curated pathways and disease events"
+    },
+    {
+      "id": "gene-ontology",
+      "name": "Gene Ontology",
+      "url": "https://geneontology.org/",
+      "role": "gene-product function and process annotations"
+    },
+    {
+      "id": "clinvar",
+      "name": "NCBI ClinVar",
+      "url": "https://www.ncbi.nlm.nih.gov/clinvar/",
+      "role": "variant-condition assertions"
+    },
+    {
+      "id": "gwas-catalog",
+      "name": "NHGRI-EBI GWAS Catalog",
+      "url": "https://www.ebi.ac.uk/gwas/",
+      "role": "population variant-trait associations"
+    }
+  ]
+}

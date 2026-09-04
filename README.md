@@ -8,7 +8,7 @@ This repository is intentionally designed to keep three things distinct:
 2. **Evidence claims** — source-linked statements with an evidence type, population, and confidence.
 3. **Presentation** — a readable public view that shows what is established, suggestive, or unknown.
 
-The current catalog is a small, reviewable starter dataset. It is not a diagnostic tool and does not provide medical advice.
+The current catalog is a small, reviewable seed dataset. It is not a diagnostic tool and does not provide medical advice.
 
 ## Local development
 
@@ -24,11 +24,12 @@ Validate the catalog with:
 
 ```bash
 python3 scripts/validate_catalog.py
+python3 scripts/ingest_hpo.py
 ```
 
 ## Data model
 
-`data/disease-catalog.json` is the source of truth. Each disease has a stable `id`, a display name, aliases, a short overview, and an array of evidence claims. Claims must identify their evidence type and include a source URL. Confidence is deliberately categorical (`high`, `moderate`, `low`, or `uncertain`) so it can be displayed without implying unwarranted precision.
+`data/disease-catalog.json` is the reader-facing source of truth. `data/disease-records.json` stores structured biology, while `data/phenotype-annotations.json` is generated from HPO. Each evidence claim must identify its evidence type and include a source URL. Confidence is deliberately categorical (`high`, `moderate`, `low`, or `uncertain`) so it can be displayed without implying unwarranted precision.
 
 See [docs/data-model.md](docs/data-model.md) for contribution guidance.
 
