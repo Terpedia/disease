@@ -8,6 +8,7 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "disease-catalog.json"
+RECORDS = ROOT / "data" / "disease-records.json"
 CONFIDENCE = {"high", "moderate", "low", "uncertain"}
 STATUSES = {"draft", "reviewed", "published"}
 REVIEW_STATUSES = {"needs-review", "in-review", "approved"}
@@ -54,6 +55,18 @@ def main() -> None:
                 fail(f"source URL must be http(s): {claim['id']}")
 
     print(f"validated {len(diseases)} disease(s) and {len(claim_ids)} claim(s)")
+    try:
+        structured = json.loads(RECORDS.read_text())
+    except (OSError, json.JSONDecodeError) as exc:
+        fail(str(exc))
+    records = structured.get("records")
+    if not isinstance(records, list) or {r.get("id") for r in records} != ids:
+        fail("structured disease records must match catalog disease IDs")
+    for record in records:
+        for field in ("genes", "markers", "pathways", "regulators"):
+            if not isinstance(record.get(field), list):
+                fail(f"{record['id']} field must be a list: {field}")
+    print(f"validated structured records for {len(records)} disease(s)")
 
 
 if __name__ == "__main__":
