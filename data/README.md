@@ -5,5 +5,6 @@
 - `phenotype-annotations.json` is generated from the current HPO disease annotation release and contains only the requested seed diseases.
 - `source-registry.json` records upstream sources, release dates, and intended use.
 - `bulk/` contains compressed JSONL/TSV snapshots produced by `scripts/ingest_bulk.py` plus a checksum manifest.
+- The GWAS archive is the official ontology-annotated release; inspect its TSV member with a streaming reader rather than expanding it into the web catalog.
 
 Generated files should retain their upstream version and retrieval date. Never overwrite a source file without updating its provenance metadata.
