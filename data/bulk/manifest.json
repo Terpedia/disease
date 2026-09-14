@@ -1,5 +1,5 @@
 {
-  "retrieved": "2026-09-07",
+  "retrieved": "2026-09-14",
   "sources": {
     "hpo": {
       "url": "https://purl.obolibrary.org/obo/hp/hpoa/phenotype.hpoa",
@@ -12,16 +12,16 @@
     "disease_names.tsv": {
       "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/disease_names",
       "file": "data/bulk/disease_names.tsv.gz",
-      "bytes": 5592830,
-      "sha256": "f39244794b8ee5bb2985e66e170a712e6fc57133ab2efebb3a46a738796fc4c6",
-      "lines": 67522
+      "bytes": 5599582,
+      "sha256": "7cbc321ffe280d8a9a0a6fdfcd8c1015b2c831f6393ddd4e6982ba8de7f3ed8d",
+      "lines": 67589
     },
     "gene_condition_source_id.tsv": {
       "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/gene_condition_source_id",
       "file": "data/bulk/gene_condition_source_id.tsv.gz",
-      "bytes": 1253900,
-      "sha256": "9a019bf683772b38159274c40162977e6e1fddd4f24c7e4a7b835ee9f671957a",
-      "lines": 13473
+      "bytes": 1254904,
+      "sha256": "b2762268425074ef6c5686209b4323be651af9cc9a3ba50ab0bd1d8ad95045bd",
+      "lines": 13483
     },
     "gene-ontology-human": {
       "url": "https://current.geneontology.org/annotations/goa_human.gaf.gz",
