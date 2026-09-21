@@ -1,5 +1,5 @@
 {
-  "retrieved": "2026-09-14",
+  "retrieved": "2026-09-21",
   "sources": {
     "hpo": {
       "url": "https://purl.obolibrary.org/obo/hp/hpoa/phenotype.hpoa",
@@ -12,15 +12,15 @@
     "disease_names.tsv": {
       "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/disease_names",
       "file": "data/bulk/disease_names.tsv.gz",
-      "bytes": 5599582,
-      "sha256": "7cbc321ffe280d8a9a0a6fdfcd8c1015b2c831f6393ddd4e6982ba8de7f3ed8d",
-      "lines": 67589
+      "bytes": 5635626,
+      "sha256": "bcd0823985317b141649e8d647eedb2b8fa83b082627de0d70bbbf1f2a846837",
+      "lines": 68298
     },
     "gene_condition_source_id.tsv": {
       "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/gene_condition_source_id",
       "file": "data/bulk/gene_condition_source_id.tsv.gz",
       "bytes": 1254904,
-      "sha256": "b2762268425074ef6c5686209b4323be651af9cc9a3ba50ab0bd1d8ad95045bd",
+      "sha256": "54fd1e407d6172a2bb44ee4f3be82a7de1891fa432d433401e5f0665e821cef8",
       "lines": 13483
     },
     "gene-ontology-human": {
@@ -44,12 +44,12 @@
       "url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations_ontology-annotated-full.zip",
       "file": "data/bulk/gwas-catalog-associations-ontology-annotated-full.zip",
       "format": "ZIP",
-      "bytes": 73489749,
-      "sha256": "64f9f7c47daad471f88e34c3a69cb0ca009b73fd193e0e13cba12f6212c514e1",
+      "bytes": 73664074,
+      "sha256": "936c2213fdf4dc15b084518910a5c820898d9fe3c2da3c1968359d44793da419",
       "members": [
         {
           "name": "gwas-catalog-download-associations-alt-full.tsv",
-          "bytes": 740716183
+          "bytes": 741077908
         }
       ]
     }
