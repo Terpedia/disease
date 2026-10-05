@@ -1,5 +1,5 @@
 {
-  "retrieved": "2026-09-28",
+  "retrieved": "2026-10-05",
   "sources": {
     "hpo": {
       "url": "https://purl.obolibrary.org/obo/hp/hpoa/phenotype.hpoa",
@@ -12,16 +12,16 @@
     "disease_names.tsv": {
       "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/disease_names",
       "file": "data/bulk/disease_names.tsv.gz",
-      "bytes": 5637804,
-      "sha256": "8f35c66265d190c283691e53978d1102c97bfa1aa3c7c409aea3436995023a85",
-      "lines": 68326
+      "bytes": 5649018,
+      "sha256": "6c2ec2c2c608573cf8df8d58403d65d9a6d6224b6e2847e0414eb81bf7484e05",
+      "lines": 68549
     },
     "gene_condition_source_id.tsv": {
       "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/gene_condition_source_id",
       "file": "data/bulk/gene_condition_source_id.tsv.gz",
-      "bytes": 1255764,
-      "sha256": "72a4ac015652fc9ee6e60112495ed1338cbe2b3e0844254e21b86238b0d78dcc",
-      "lines": 13491
+      "bytes": 1256057,
+      "sha256": "0018732375ebe0c6f035b181d2169dfd7fdb0601434e24d1096a50c2aba72f94",
+      "lines": 13494
     },
     "gene-ontology-human": {
       "url": "https://current.geneontology.org/annotations/goa_human.gaf.gz",
@@ -44,12 +44,12 @@
       "url": "https://ftp.ebi.ac.uk/pub/databases/gwas/releases/latest/gwas-catalog-associations_ontology-annotated-full.zip",
       "file": "data/bulk/gwas-catalog-associations-ontology-annotated-full.zip",
       "format": "ZIP",
-      "bytes": 73664074,
-      "sha256": "936c2213fdf4dc15b084518910a5c820898d9fe3c2da3c1968359d44793da419",
+      "bytes": 72826184,
+      "sha256": "c3b18bcde213728abe7c0a93e58f86328584c9b1dd599b7acaae456215c9cee1",
       "members": [
         {
           "name": "gwas-catalog-download-associations-alt-full.tsv",
-          "bytes": 741077908
+          "bytes": 745002769
         }
       ]
     }
